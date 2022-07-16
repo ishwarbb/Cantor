@@ -5,8 +5,6 @@ const path = require('node:path');
 const { Client, Collection, Intents } = require('discord.js');
 const { x,y,token } = require('./config.json');
 
-console.log(fs+path+x+y);
-
 const client = new Client({ intents: [Intents.FLAGS.GUILDS,"GUILD_MESSAGES", "DIRECT_MESSAGES"] });
 
 client.commands = new Collection();
